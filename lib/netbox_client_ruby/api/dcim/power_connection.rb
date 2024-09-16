@@ -9,7 +9,7 @@ module NetboxClientRuby
 
       id id: :id
       deletable true
-      path 'dcim/power-connections/:id.json'
+      path 'dcim/power-connections/:id/'
       creation_path 'dcim/power-connections/'
 
       object_fields(

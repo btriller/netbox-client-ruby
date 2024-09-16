@@ -9,7 +9,7 @@ module NetboxClientRuby
 
       id id: :id
       deletable true
-      path 'secrets/secret-roles/:id.json'
+      path 'secrets/secret-roles/:id/'
       creation_path 'secrets/secret-roles/'
     end
   end

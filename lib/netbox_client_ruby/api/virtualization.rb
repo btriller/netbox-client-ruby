@@ -29,6 +29,7 @@ module NetboxClientRuby
       cluster: Cluster,
       virtual_machine: VirtualMachine,
       interface: Interface,
+      vminterface: Interface,
     }.each_pair do |method_name, class_name|
       define_method(method_name) { |id| class_name.new id }
       module_function(method_name)

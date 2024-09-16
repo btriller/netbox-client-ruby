@@ -29,7 +29,9 @@ module NetboxClientRuby
     end
 
     def self.headers
-      headers = {}
+      headers = {
+        'Content-Type': 'application/json'
+      }
       auth_token = auth_config.token
       headers['Authorization'] = "Token #{auth_token}".freeze if auth_token
       headers['X-Session-Key'] = NetboxClientRuby::Secrets.session_key if NetboxClientRuby::Secrets.session_key
